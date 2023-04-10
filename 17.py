@@ -2,6 +2,7 @@
 Write a Python program to calculate the difference between a given number and 17. 
 If the number is greater than 17, return twice the absolute difference.
 '''
+#get the number
 number = int(input("What is the number? "))
 
 if number <= 17:
