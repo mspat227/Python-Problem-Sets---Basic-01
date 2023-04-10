@@ -9,6 +9,6 @@ my_list = sample_data.split(",")
 
 my_tuple = tuple(my_list)
 
-
+#printing the list and tuple
 print("List: ", my_list)
 print("Tuple: ", my_tuple)
