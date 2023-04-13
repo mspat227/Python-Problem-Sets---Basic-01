@@ -1,14 +1,9 @@
 '''
-Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
-fname = input("Input your First Name : ")
-lname = input("Input your Last Name : ")
-print ("Hello  " + lname + " " + fname)
-
-.title() will capitalaized the forst letter
+37. Write a Python program that displays your name, age, and address on three different lines.
 '''
 
+name = input("Name: ")
+adress = input("Adress: ")
+age = input("Age: ")
 
-first = input("First Name: ").title()
-last = input("Last Name: ").title()
-
-print(f"{last} {first}")
+print(f"Name: {name}\nAdress: {adress}\nAge: {age}")
