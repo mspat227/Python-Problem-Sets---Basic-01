@@ -1,14 +1,21 @@
 '''
-22. Write a Python program to count the number 4 in a given list.
+7. Write a Python program to count the number of each character in a text file
 '''
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 6, 4, 5, 78, 56, 21, 4, 4, 6, 8, 45, 65, 54, 4]
+#open the file and read the file to a var
+file = open("hello.txt", "r")
+my_string = file.read()
 
-counter = 0
+charactor_count = []
+charactors = []
 
-for i in range(len(my_list)):
-    if my_list[i] == 4:
-        counter +=1
-    else:
-        pass
+#append the charactors in to a list
+for i in range(len(my_string)):
+    charactors.append(my_string[i])
 
-print(counter)
+#append the charactor count to list
+for i in range(len(my_string)):
+    charactor_count.append(my_string.count(my_string[i]))
+
+print(str(list(zip(charactors, charactor_count))))
+
+#can use the collections module
